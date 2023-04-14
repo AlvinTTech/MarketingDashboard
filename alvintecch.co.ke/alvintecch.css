@@ -1,0 +1,211 @@
+
+* {
+	margin: 1;
+	padding: 1;
+	box-sizing: border-box;
+	font-family: 'poppins', san-serif;
+}
+
+
+body {
+	width: 100%;
+	background: #2d3142;
+	position: relative;
+	display: flex;
+}
+#sidemenu {
+	background: #EF8354;
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#sidemenu .logo{
+	display: grid;
+	align-items: center;
+	color: #ffffff;
+	padding: 30px 0 0 30px;
+
+}
+#sidemenu .logo img {
+	width: 80px;
+	margin-right: 5px;
+}
+#sidemenu .ListItems {
+	margin-top: 40px;
+
+}
+
+#sidemenu .ListItems li {
+	list-style: none;
+	padding: 15px 0;
+	transition: 0.3s ease;
+}
+#sidemenu .logo h2{
+	font-size: 15px;
+}
+#sidemenu .ListItems li i{
+	color:#152048;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 0 10px 0 25px;
+}
+#sidemenu .ListItems li a{
+	text-decoration: none;
+	color:#ffffff;
+	font-weight: 300px;
+	transition:0.3s ease;
+}
+
+#sidemenu .ListItems li:hover{
+	background: #152048 ;
+	cursor: pointer;
+} 
+
+#sidemenu .ListItems li:nth-child(1){
+	border-left: 4px solid #ffffff;
+}
+#sidemenu .ListItems li:hover i,
+#sidemenu .ListItems li:hover {
+	color:#ffffff;
+}
+
+#Userinterface {
+	width: calc(100% - 300px);
+	margin-left:300px;
+	position: relative;
+}
+#Userinterface .navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #4F5D75;
+	padding: 5px 30px;
+	border-bottom: 3px solid #ffffff;
+	position: fixed;
+	width: calc(100% - 300px);
+}
+
+#Userinterface .navigation1 h2{
+	font-weight: 600;
+	color: #ffffff;
+}
+#Userinterface .navigation .profile{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#Userinterface .navigation .profile img{
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.i-name{
+	color: #ffffff;
+	padding: 30px 30px 0 30px;
+	font-size:24px;
+	font-weight: 700;
+	margin-top: 70px;
+	position: fixed;
+}
+.Values{
+	padding: 30px 30px 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: last baseline;
+	flex-wrap: wrap;
+	margin-top: 120px;
+
+}
+.Values .val-box{
+	background: #ffffff;
+	width:235px;
+	padding: 16px 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 8px;
+}
+.Values .val-box i{
+	font-size: 25px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	background-color: #EF8354;
+	margin-right: 15px;
+}
+.Values .val-box h3{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.Values .val-box span{
+	font-size: 15px;
+	color: #828997;
+}
+/*Dashboard Table */
+.board{
+	width: 94%;
+	margin: 30px 0 30px 30px;
+	overflow: auto;
+	background-color: white;
+	border-radius: 8px;
+}
+.board img{
+	width: 45px;
+	height: 45px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 15px; 
+}
+.board h5{
+	font-weight: 600;
+	font-size: 14px;
+}
+.board p{
+	font-weight:400;
+	font-size:13px;
+	color: grey;
+}
+.board .team{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: start;
+}
+table{
+	border-collapse: collapse;
+}
+tr{
+	border-bottom: 1px solid #EF8354;
+}
+thead td{
+	font-size: 14px;
+	text-transform: uppercase;
+	color:#ffffff;
+	font-weight: 400;
+	background-color: #4F5D75;
+	text-align: start;
+	padding: 15px;
+	transition: 0.3s ease;
+}
+thead td:hover{
+	background: #EF8354 ;
+	cursor: pointer;
+}
+tbody tr td{
+	padding: 10px 15px;
+	transition: 0.3s ease;
+}
+tbody tr td:hover{
+	background: #EF8354;
+	cursor: pointer;
+}
